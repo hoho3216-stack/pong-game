@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 100px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.score span {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.score p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+#gameCanvas {
+    background: #000;
+    border: 3px solid #00ff00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    cursor: none;
+    display: block;
+    margin: 20px 0;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.instructions p {
+    margin: 5px 0;
+}
+
+.instructions strong {
+    color: #ffd700;
+}
+
+#gameStatus {
+    font-size: 18px !important;
+    color: #00ff00 !important;
+    font-weight: bold !important;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+    }
+
+    .scoreboard {
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
